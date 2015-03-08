@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{91F32185-008A-41ED-8368-C90002C6479B}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FenCiTool</RootNamespace>
+    <AssemblyName>FenCiTool</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FenCiExample.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="bin\Debug\FenCiTool.exe.config" />
+    <None Include="bin\Debug\FenCiTool.vshost.exe.config" />
+    <None Include="bin\Debug\FenCiTool.vshost.exe.manifest" />
+    <None Include="bin\Debug\NLPIR.lib" />
+    <None Include="Data\20141225.err" />
+    <None Include="Data\BIG2GBK.map" />
+    <None Include="Data\BIG5.pdat" />
+    <None Include="Data\BIG5.wordlist" />
+    <None Include="Data\BiWord.big" />
+    <None Include="Data\charset.type" />
+    <None Include="Data\CoreDict.pdat" />
+    <None Include="Data\CoreDict.pos" />
+    <None Include="Data\CoreDict.unig" />
+    <None Include="Data\English\English.pdat" />
+    <None Include="Data\English\English.pos" />
+    <None Include="Data\English\English.ung" />
+    <None Include="Data\English\English.wordlist" />
+    <None Include="Data\English\Irrel2regular.map" />
+    <None Include="Data\English\ne.pdat" />
+    <None Include="Data\English\ne.pos" />
+    <None Include="Data\English\ne.wordlist" />
+    <None Include="Data\FieldDict.pdat" />
+    <None Include="Data\FieldDict.pos" />
+    <None Include="Data\FTU8.pdat" />
+    <None Include="Data\FTU8.wordlist" />
+    <None Include="Data\FTU82GBK.map" />
+    <None Include="Data\GBK.pdat" />
+    <None Include="Data\GBK.wordlist" />
+    <None Include="Data\GBK2BIG.map" />
+    <None Include="Data\GBK2FTU8.map" />
+    <None Include="Data\GBK2GBKC.map" />
+    <None Include="Data\GBK2UTF.map" />
+    <None Include="Data\GBKA.pdat" />
+    <None Include="Data\GBKA.wordlist" />
+    <None Include="Data\GBKA2UTF.map" />
+    <None Include="Data\GBKC.pdat" />
+    <None Include="Data\GBKC.wordlist" />
+    <None Include="Data\GBKC2GBK.map" />
+    <None Include="Data\GranDict.pdat" />
+    <None Include="Data\GranDict.pos" />
+    <None Include="Data\ICTPOS.map" />
+    <None Include="Data\location.map" />
+    <None Include="Data\location.pdat" />
+    <None Include="Data\location.wordlist" />
+    <None Include="Data\NLPIR.ctx" />
+    <None Include="Data\NLPIR_First.map" />
+    <None Include="Data\nr.ctx" />
+    <None Include="Data\nr.fsa" />
+    <None Include="Data\nr.role" />
+    <None Include="Data\PKU.map" />
+    <None Include="Data\PKU_First.map" />
+    <None Include="Data\sentiment.pdat" />
+    <None Include="Data\sentiment.ung" />
+    <None Include="Data\UserDict.pdat" />
+    <None Include="Data\UTF2GBK.map" />
+    <None Include="Data\UTF2GBKA.map" />
+    <None Include="Data\UTF8.pdat" />
+    <None Include="Data\UTF8.wordlist" />
+    <None Include="doc\ICTPOS3.0.doc" />
+    <None Include="doc\NLPIR-ICTCLAS2014分词系统开发手册2015版.pdf" />
+    <None Include="importuserdict\ICTCLAS2014.rar" />
+    <None Include="lib\linux32\libNLPIR.so" />
+    <None Include="lib\linux64\libNLPIR.so" />
+    <None Include="lib\win32\NLPIR.lib" />
+    <None Include="lib\win64\NLPIR.lib" />
+    <None Include="test\迁钢语料\汉语词性对照表.doc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\FenCiTool.exe" />
+    <Content Include="bin\Debug\FenCiTool.pdb" />
+    <Content Include="bin\Debug\FenCiTool.vshost.exe" />
+    <Content Include="bin\Debug\NLPIR.dll" />
+    <Content Include="Data\Configure.xml" />
+    <Content Include="Data\DocExtractor.user" />
+    <Content Include="Data\LJHtmlParser.user" />
+    <Content Include="Data\NewWord.lst" />
+    <Content Include="Data\NLPIR.user" />
+    <Content Include="Data\summary.user" />
+    <Content Include="importuserdict\Readme.txt" />
+    <Content Include="include\NLPIR.h" />
+    <Content Include="lib\linux64\Readme.txt" />
+    <Content Include="lib\win32\NLPIR.dll" />
+    <Content Include="lib\win64\NLPIR.dll" />
+    <Content Include="test\18届三中全会.TXT" />
+    <Content Include="test\docs\0-两栖战车亮相.txt" />
+    <Content Include="test\docs\1-辽宁阜新官员涉嫌淫乱事件举报者被刑拘.txt" />
+    <Content Include="test\docs\2-辽宁一男子女厕用手机拍照被拘%28图%29.txt" />
+    <Content Include="test\docs\3-两人打甲流疫苗后死亡 另有15例较严重异常反应.txt" />
+    <Content Include="test\docs\4-English.txt" />
+    <Content Include="test\English.txt" />
+    <Content Include="test\中英文混杂示例.txt" />
+    <Content Include="test\屌丝，一个字头的诞生.TXT" />
+    <Content Include="test\用户词典.txt" />
+    <Content Include="test\迁钢语料\炼钢.txt" />
+    <Content Include="test\迁钢语料\迁钢.txt" />
+    <Content Include="test\迁钢语料\迁钢公司炼钢作业部润滑脂国产化降成本收效大.txt" />
+    <Content Include="test\迁钢语料\迁钢创新高.txt" />
+    <Content Include="test\迁钢语料\首钢迁钢无氟炼钢技术效益显著.txt" />
+    <Content Include="test\迁钢语料\首钢迁钢通过超快冷工艺完成X70万吨订单.txt" />
+    <Content Include="test\迁钢语料\首钢重组.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Release\" />
+    <Folder Include="lib\android\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
