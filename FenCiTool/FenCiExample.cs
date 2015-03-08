@@ -59,6 +59,7 @@ namespace FenCiTool.Win_CSharp
     /// </summary>
     static class FenCiExample
     {
+
         const string path = @"NLPIR.dll";//设定dll的路径
         /// <summary>
         /// 摘要：
